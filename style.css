@@ -76,10 +76,10 @@ nav a:hover {
 .hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   align-items: center;
   padding: 120px 8%;
-  gap: 60px;
+  gap: 80px;
 }
 
 .badge {
@@ -102,6 +102,10 @@ nav a:hover {
   animation: pulse 1.5s infinite;
 }
 
+.lastname {
+  font-size: 0.92em;
+}
+
 @keyframes pulse {
   0% { opacity: 1; }
   50% { opacity: 0.4; }
@@ -109,9 +113,10 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 90px;
-  line-height: 0.95;
+  font-size: 72px !important;
+  line-height: 1.2 !important;
   font-weight: 900;
+  letter-spacing: -2px;
 }
 
 .hero h1 span {
@@ -119,6 +124,10 @@ nav a:hover {
   background: linear-gradient(to right, #60a5fa, #c084fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-left {
+  max-width: 650px;
 }
 
 .hero p {
