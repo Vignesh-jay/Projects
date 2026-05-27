@@ -395,3 +395,161 @@ footer p {
     display: none;
   }
 }
+
+/* =========================================
+   MOBILE OPTIMIZATION
+========================================= */
+
+@media (max-width: 1000px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 20px 6%;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 120px 6% 80px;
+    gap: 50px;
+    min-height: auto;
+  }
+
+  .hero-left {
+    order: 2;
+  }
+
+  .hero-right {
+    order: 1;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+    line-height: 0.95;
+  }
+
+  .hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+
+  .badge {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+  }
+
+  /* Hero Image */
+  .hero-card {
+    border-radius: 24px;
+  }
+
+  .hero-card img {
+    height: 340px;
+  }
+
+  .hero-overlay {
+    padding: 25px;
+  }
+
+  .hero-overlay h3 {
+    font-size: 26px;
+  }
+
+  /* Sections */
+  .projects,
+  .about {
+    padding: 80px 6%;
+  }
+
+  .section-title h2,
+  .about-left h2 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  /* Projects */
+  .project-grid {
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .project-card {
+    border-radius: 24px;
+  }
+
+  .project-image img {
+    height: 220px;
+  }
+
+  .project-content {
+    padding: 24px;
+  }
+
+  .project-content h3 {
+    font-size: 28px;
+  }
+
+  .project-content p {
+    font-size: 15px;
+  }
+
+  .tech-stack span {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-buttons a {
+    width: 100%;
+  }
+
+  /* About */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-right p {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 80px 6%;
+  }
+
+  footer h3 {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  /* Background glow softer */
+  .glow-1,
+  .glow-2 {
+    filter: blur(120px);
+    opacity: 0.5;
+  }
+}
