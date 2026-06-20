@@ -288,6 +288,7 @@ nav a:hover {
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .tech-stack span {
@@ -561,4 +562,48 @@ footer p {
     filter: blur(120px);
     opacity: 0.5;
   }
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+.project-content{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+.project-buttons{
+    margin-top:auto;
+}
+
+.project-tag{
+    letter-spacing:2px;
+    font-size:11px;
+    font-weight:700;
+}
+
+.hero-tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.hero-tech span{
+    padding:8px 14px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:999px;
+    font-size:0.85rem;
+    font-weight:500;
 }
